@@ -1,0 +1,175 @@
+/*
+Eric Cohen
+Date: October, 3, 2018
+Section: CSE 154 AI
+
+This is the index.css page for my web development portfolio and my Fraternity's
+website. It is used by all pages in the portfolio so that each page can
+keep the overall design consistency.
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  color: white;
+  overflow: hidden;
+  text-decoration: none;
+  padding: 80px;
+}
+
+li {
+  display: inline-block;
+}
+
+li.active {
+  background-color: #25185d;
+}
+
+a:hover {
+  color: #999900;
+}
+
+/*Image taken from
+https://wallpapercave.com/cool-plain-backgrounds
+*/
+main {
+  background-image: url("Images/background_body.jpg");
+  color: white;
+}
+
+main p {
+  padding: 2px;
+}
+
+footer {
+  background-color: gray;
+  color: black;
+}
+
+iframe {
+  border: none;
+  overflow: hidden;
+  background-color: white;
+  margin-top: 2vh;
+}
+
+h1 a {
+  text-decoration: none;
+  color: #003366;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  text-align: center;
+  overflow: hidden;
+  display: block;
+  background-color: black;
+  border-right-style: solid;
+  border-right-color: #555;
+  font-size: 210%;
+  position: fixed;
+}
+
+.home {
+  color: white;
+  text-align: center;
+  z-index: 4;
+}
+
+.title {
+  text-shadow: 10px 10px 54px #ffd200, -10px -10px 54px #ffd200,
+               -10px 10px 54px #ffd200, 10px -10px 54px #ffd200;
+  color: #003366;
+  line-height: 2.104;
+}
+
+.page_title {
+  font-size: 100px;
+  text-align: center;
+}
+
+/*Image taken from https://goo.gl/2ZkWQm*/
+.body_main {
+
+  background-color: black;
+  background-image: url("Images/UW_background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 800px;
+  background-attachment: fixed;
+}
+
+.existing {
+    min-height: 100vh;
+}
+
+#ZBT {
+  font-size: 500%;
+}
+
+#ZetaBT {
+  font-weight: bold;
+}
+
+#motto {
+  font-size: 200%;
+  text-shadow: 1px 1px 0 #000000, -1px -1px 0 #000000,
+               -1px 1px 0 #000000, 1px -1px 0 #000000;
+  margin-bottom: 1%
+}
+
+/*Image taken from
+https://nypost.com/2018/08/05/party-boat-fight-leads-to-stabbing-cops/ */
+#body_404 {
+  background-color: black;
+  background-image: url("Images/cop_light.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+
+
+#main-text {
+  text-align: center;
+  font-size: 120%;
+  padding-top: 8%;
+}
+
+#text_404 {
+  text-align: center;
+  font-size: 250%;
+  padding: 2%;
+  margin: 9%;
+}
+
+#main_img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+}
+
+#crest {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 8vh;
+}
+
+#fb-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 40%;
+}
+
+#fb-page > div:nth-child(5) {
+  margin-bottom: 2vh;
+}
