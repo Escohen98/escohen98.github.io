@@ -36,7 +36,7 @@ a:hover {
 https://wallpapercave.com/cool-plain-backgrounds
 */
 main {
-  background-image: url("Images/background_body.jpg");
+  background-image: url("images/background_body.jpg");
   color: white;
 }
 
@@ -99,7 +99,7 @@ h1 a {
 .body_main {
 
   background-color: black;
-  background-image: url("Images/UW_background.jpg");
+  background-image: url("images/UW_background.jpg");
   background-repeat: no-repeat;
   background-size: 100% 800px;
   background-attachment: fixed;
@@ -128,7 +128,7 @@ h1 a {
 https://nypost.com/2018/08/05/party-boat-fight-leads-to-stabbing-cops/ */
 #body_404 {
   background-color: black;
-  background-image: url("Images/cop_light.jpg");
+  background-image: url("images/cop_light.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
