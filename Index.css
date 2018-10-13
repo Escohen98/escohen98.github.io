@@ -47,6 +47,7 @@ main p {
 footer {
   background-color: gray;
   color: black;
+  bottom: fixed;
 }
 
 iframe {
