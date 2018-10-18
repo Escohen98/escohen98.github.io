@@ -16,7 +16,6 @@ as well as the donate button on the front page.
 
   //Runs after page is loaded. If statements are present to prevent typeError.
   function initialize() {
-    console.log("Page Successfully Loaded.");
     let donateButton = $("donate-button");
     let radioLegacy = qsa("input[name='legacy']");
     let rushSubmit = $("rush-submit");
@@ -34,7 +33,6 @@ as well as the donate button on the front page.
 
 //Redirects page to paypal when donation button is pressed.
   function redirect() {
-    console.log("Redirecting to Paypal...");
     //The link is just a placeholder until I get a house link.
     window.location.href = "https://paypal.me/escseller";
   }

@@ -5,13 +5,9 @@ Section: CSE 154 AI
 
 This is the index.css page for my web development portfolio and my Fraternity's
 website. It is used by all pages in the portfolio so that each page can
-keep the overall design consistency.
+keep the overall design consistency. The file looks distored because the universal
+operator has been removed.
 */
-
-* {
-  padding: 0;
-  margin: 0;
-}
 
 body {
   margin: 0;
