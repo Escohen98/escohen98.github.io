@@ -9,22 +9,26 @@ keep the overall design consistency.
 */
 
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
-li a {
-  color: white;
-  overflow: hidden;
+body {
+  margin: 0;
+}
+
+div a {
   text-decoration: none;
-  padding: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
-li {
+div {
   display: inline-block;
+  overflow: hidden;
 }
 
-li.active {
+div.active {
   background-color: #25185d;
 }
 
@@ -36,8 +40,7 @@ a:hover {
 https://wallpapercave.com/cool-plain-backgrounds
 */
 main {
-  background-image: url("./Images/background_body.jpg");
-  color: white;
+  background-image: url("Images/background_body.jpg");
 }
 
 main p {
@@ -46,7 +49,6 @@ main p {
 
 footer {
   background-color: gray;
-  color: black;
   bottom: fixed;
 }
 
@@ -62,14 +64,7 @@ h1 a {
   color: #003366;
 }
 
-.navbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  text-align: center;
-  overflow: hidden;
-  display: block;
+nav {
   background-color: black;
   border-right-style: solid;
   border-right-color: #555;
@@ -77,10 +72,33 @@ h1 a {
   position: fixed;
 }
 
-.home {
+fieldset, form button {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+form {
+  padding-left: .2vh;
+}
+
+fieldset {
+  font-size: 30px;
+  padding-left: 1vh;
+}
+
+nav, #fb-page {
+  align-items: center;
+}
+nav, #main-text, #fb-page {
+  display: flex;
+}
+
+nav, #main-text {
+  justify-content: center;
+}
+
+.home, div a, main {
   color: white;
-  text-align: center;
-  z-index: 4;
 }
 
 .title {
@@ -90,23 +108,32 @@ h1 a {
   line-height: 2.104;
 }
 
-.page_title {
+.page-title {
   font-size: 100px;
-  text-align: center;
 }
 
 /*Image taken from https://goo.gl/2ZkWQm*/
-.body_main {
-
-  background-color: black;
+.body-main {
   background-image: url("Images/UW_background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 800px;
+  background-size: 100% auto;
   background-attachment: fixed;
 }
 
 .existing {
     min-height: 100vh;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+#submit-response-size {
+  font-size: 25px;
 }
 
 #ZBT {
@@ -126,49 +153,45 @@ h1 a {
 
 /*Image taken from
 https://nypost.com/2018/08/05/party-boat-fight-leads-to-stabbing-cops/ */
-#body_404 {
-  background-color: black;
-  background-image: url("./Images/cop_light.jpg");
+#body-404 {
+  background-image: url("Images/cop_light.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
 
-
-
-#main-text {
-  text-align: center;
-  font-size: 120%;
-  padding-top: 8%;
+#body-404, .body-main, navbar {
+  background-color: black;
 }
 
-#text_404 {
-  text-align: center;
+#main-text {
+  font-size: 120%;
+  padding-top: 8%;
+  flex-flow: column;
+
+}
+
+#main-image, #main-text, nav, #fb-page {
+  width: 100%;
+  height: auto;
+}
+
+#text-404 {
   font-size: 250%;
   padding: 2%;
   margin: 9%;
 }
 
-#main_img {
-  display: block;
+#main-img {
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  height: auto;
 }
 
 #crest {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
   margin-top: 8vh;
 }
 
 #fb-page {
-  width: 100%;
-  display: flex;
   flex-direction: column;
-  margin-left: 40%;
 }
 
 #fb-page > div:nth-child(5) {
