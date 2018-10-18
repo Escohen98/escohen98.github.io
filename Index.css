@@ -8,6 +8,10 @@ website. It is used by all pages in the portfolio so that each page can
 keep the overall design consistency. The file looks distored because the universal
 operator has been removed.
 */
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   margin: 0;
