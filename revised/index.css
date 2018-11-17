@@ -9,11 +9,6 @@ keep the overall design consistency. The file looks distored because the univers
 operator has been removed.
 */
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   margin: 0;
 }
@@ -122,7 +117,7 @@ nav, #main-text {
 }
 
 .existing {
-  min-height: 100vh;
+    min-height: 100vh;
 }
 
 .center-text {

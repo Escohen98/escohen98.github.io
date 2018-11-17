@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<!--
+Eric Cohen
+Date: October 17, 2018
+Section: CSE 154 AI
+
+This is the rush-form.html page for my portfolio of web development work.
+It includes a navigation bar that links to other pages for
+my Fraternity website. It also has form that students who hope to rush our house
+can fill out so-that we can get in-touch with them. The form has 3 textareas,
+one drop down menu, two radio buttons, and a submit button. It also has a footer
+noting that the website is copyrighted.
+-->
+<html lang="en-us">
+  <head>
+    <meta charset = "utf-8">
+    <link href="Index.css" rel="stylesheet" />
+    <link rel="icon" type="image/ico" href="./Images/zbt_icon.jpg" />
+    <title>ZBT - Alpha Mu</title>
+    <script src="index.js"></script>
+  </head>
+  <body class="body-main">
+    <header>
+      <nav class="center-text">
+          <div><a href="index.html">Home</a></div>
+          <div><a href="Brothers.html">Brothers</a></div>
+          <div class="active"><a href="rush-form.html">Rush</a></div>
+          <div><a href="Social.html">Social</a></div>
+      </nav>
+      <h1 class="title page-title center-text">Rush Sign Up</h1>
+    </header>
+    <main>
+      <form id="rush-form" class=".center-text">
+        <fieldset>
+          <legend>Name</legend>
+          <textarea id="name-input-field" name="name" placeholder="Jacob Cohen"></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Year in School</legend>
+          <select id="year-in-school" name="year">
+            <option value="">--Please choose an option--</option>
+            <option value="freshman">1st</option>
+            <option value="sophomore">2nd</option>
+            <option value="junior">3rd</option>
+            <option value="senior">4th+</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Hometown</legend>
+          <textarea id="hometown-input-field" name="hometown" placeholder="Seattle">
+          </textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Phone Number</legend>
+          <textarea id="phone-input-field" name="phone number"
+            placeholder="xxx-xxx-xxxx"></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Are You a Legacy?</legend>
+          <input type="radio" name="legacy" value=TRUE>Yes</input>
+          <input type="radio" name="legacy" value=FALSE>
+            No</input>
+        </fieldset>
+        <fieldset id="legacy-toggle" class="hidden">
+          <legend>What Chapter?</legend>
+          <textarea id="legacy-chapter" name="legacy chapter"
+            placeholder="School" required></textarea>
+        </fieldset>
+        <button id="rush-submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <!--Paraphrased from https://zbttexas.com/-->
+      <p> &copy 2018 by Washington Alpha Mu. Site Managed by ZBT Washington
+          Internet Chair.</p>
+    </footer>
+  </body>
+</html>
