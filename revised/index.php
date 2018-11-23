@@ -53,7 +53,7 @@
       print_error("Missing GET parameter: 'name'");
     }
     header("Content-type: application/json");
-    echo $members;
+    echo json_encode($members);
   } else if(strtolower($_GET["type"]) == "string") {
       $files = get_files();
       header("Content-type: text/plain");
@@ -79,9 +79,8 @@
         print_error("Invalid GET parameter: {$affiliation}");
       }
     } else {
-      $members = json_encode(
-                 array("brothers" => json_decode(get_brothers(false)),
-                 "sweethearts" => json_decode(get_brothers(true))));
+      $members = array("brothers" => get_brothers(false),
+                 "sweethearts" => get_brothers(true));
     }
 
     return $members;
@@ -108,7 +107,7 @@
       array_push($member,
                 set_properties($name, $brother_dir1, $name_short));
     }
-    return json_encode($member);
+    return $member;
    }
 
    //Returns an array of files names of every person who's image is in the directory.
@@ -144,6 +143,7 @@
    //Prints given message as an invalid request.
    function print_error($msg) {
      header("HTTP/1.1 400 Invalid Request");
+     header("Content-type: text/plain");
      die($msg);
    }
 ?>

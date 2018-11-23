@@ -1,6 +1,6 @@
 /*
 Eric Cohen
-Date: October, 3, 2018
+Date: November 16, 2018
 Section: CSE 154 AI
 
 This is the index.css page for my web development portfolio and my Fraternity's
@@ -9,27 +9,13 @@ keep the overall design consistency. The file looks distored because the univers
 operator has been removed.
 */
 
+/*Image taken from https://goo.gl/2ZkWQm*/
 body {
-  margin: 0;
-}
-
-div a {
-  text-decoration: none;
-  padding-left: 80px;
-  padding-right: 80px;
-}
-
-div {
-  display: inline-block;
-  overflow: hidden;
-}
-
-div.active {
-  background-color: #25185d;
-}
-
-a:hover {
-  color: #999900;
+  background-image: url("Images/UW_background.jpg");
+  background-size: 100% auto;
+  background-attachment: fixed;
+  margin: 0px;
+  text-align: center;
 }
 
 /*Image taken from
@@ -37,159 +23,156 @@ https://wallpapercave.com/cool-plain-backgrounds
 */
 main {
   background-image: url("Images/background_body.jpg");
+  width: 95%;
+  height: 100%;
 }
 
-main p {
-  padding: 2px;
-}
-
-footer {
-  background-color: gray;
-  bottom: fixed;
-}
-
-iframe {
-  border: none;
-  overflow: hidden;
-  background-color: white;
-  margin-top: 2vh;
-}
-
-h1 a {
-  text-decoration: none;
-  color: #003366;
+main, #singlemember, #singlemember > div {
+  margin: auto;
 }
 
 nav {
+  justify-content: center;
   background-color: black;
   border-right-style: solid;
   border-right-color: #555;
   font-size: 210%;
   position: fixed;
+  overflow: hidden;
+  top: 0px;
 }
 
-fieldset, form button {
-  margin-top: 1vh;
-  margin-bottom: 1vh;
+nav, #singlemember {
+  background-color: black;
 }
 
-form {
-  padding-left: .2vh;
-}
-
-fieldset {
-  font-size: 30px;
-  padding-left: 1vh;
-}
-
-nav, #fb-page {
-  align-items: center;
-}
-nav, #main-text, #fb-page {
+main, nav, #main-text p, .images > div, #singlemember, #singlemember > div,
+  .dropdown {
   display: flex;
 }
 
-nav, #main-text {
-  justify-content: center;
+main, #main-text p, #singlemember > div, .dropdown {
+  flex-direction: column;
+  align-items: center;
 }
 
-.home, div a, main {
+p, span a, h2 {
   color: white;
 }
 
-.title {
+h1 {
   text-shadow: 10px 10px 54px #ffd200, -10px -10px 54px #ffd200,
                -10px 10px 54px #ffd200, 10px -10px 54px #ffd200;
   color: #003366;
-  line-height: 2.104;
 }
 
-.page-title {
-  font-size: 100px;
+h2 {
+  font-size: 250%;
+  text-shadow: 1px 1px 0 #000000, -1px -1px 0 #000000,
+             -1px 1px 0 #000000, 1px -1px 0 #000000;
 }
 
-/*Image taken from https://goo.gl/2ZkWQm*/
-.body-main {
-  background-image: url("Images/UW_background.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-attachment: fixed;
+.images > div, #singlemember {
+  justify-content: space-between;
+  flex-wrap: wrap;
+
 }
 
-.existing {
-    min-height: 100vh;
+span a {
+  text-decoration: none;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
-.center-text {
-  text-align: center;
+p span {
+  padding-top: 20px;
 }
 
-.hidden {
-  display: none;
+footer {
+  background-color: gray;
+  color: black;
+  margin: 0px;
+  bottom: 0px;
 }
 
-#submit-response-size {
-  font-size: 25px;
+footer p {
+  margin: 0;
+}
+
+nav, footer, .images > div{
+  width: 100%;
 }
 
 #ZBT {
   font-size: 500%;
 }
 
-#ZetaBT {
-  font-weight: bold;
-}
-
-#motto {
-  font-size: 200%;
-  text-shadow: 1px 1px 0 #000000, -1px -1px 0 #000000,
-               -1px 1px 0 #000000, 1px -1px 0 #000000;
-  margin-bottom: 1%
-}
-
-/*Image taken from
-https://nypost.com/2018/08/05/party-boat-fight-leads-to-stabbing-cops/ */
-#body-404 {
-  background-image: url("Images/cop_light.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-}
-
-#body-404, .body-main, navbar {
-  background-color: black;
-}
-
 #main-text {
   font-size: 120%;
-  padding-top: 8%;
-  flex-flow: column;
-
+  margin: 4% auto;
+  padding: 4% 2%;
+  border-style: double;
+  border-width: 5px;
 }
 
-#main-image, #main-text, nav, #fb-page {
-  width: 100%;
-  height: auto;
+#main-text .image-person {
+  border-color: black;
 }
 
-#text-404 {
-  font-size: 250%;
-  padding: 2%;
-  margin: 9%;
+#main-text img {
+  margin-top: 8%;
 }
 
-#main-img {
-  margin-left: auto;
-  margin-right: auto;
+#singlemember {
+  width: auto;
+  height: 500%;
 }
 
-#crest {
-  margin-top: 8vh;
+#singlemember > div {
+  height: 200%;
+  width: auto; /*Duplicate property*/
 }
 
-#fb-page {
-  flex-direction: column;
+#rush-submit {
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
-#fb-page > div:nth-child(5) {
-  margin-bottom: 2vh;
+#test {
+  position: relative;
+  background-color: green;
+}
+
+.div-person {
+  margin: 2%;
+}
+
+.div-person p {
+  font-size: 20px;
+}
+
+.div-person:hover {
+  border-color: white;
+}
+
+.div-person:hover, .image-person {
+  border-style: solid;
+}
+
+.side-page {
+  font-size: 60px;
+  margin-top: 4%;
+}
+
+a:hover {
+  color: #999900;
+}
+
+.active {
+  background-color: #25185d;
+}
+
+.hidden {
+  display: none;
+  visibility: none;
 }
