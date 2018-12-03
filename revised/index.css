@@ -33,7 +33,6 @@ main, #singlemember, #singlemember > div {
 
 nav {
   justify-content: center;
-  background-color: black;
   border-right-style: solid;
   border-right-color: #555;
   font-size: 210%;
@@ -42,18 +41,22 @@ nav {
   top: 0px;
 }
 
-nav, #singlemember {
+nav span, #singlemember {
   background-color: black;
 }
 
-main, nav, #main-text p, .images > div, #singlemember, #singlemember > div,
+main, nav, .main-text p, .images > div, #singlemember, #singlemember > div,
   .dropdown {
   display: flex;
 }
 
-main, #main-text p, #singlemember > div, .dropdown {
+main, .main-text p, #singlemember > div, .dropdown {
   flex-direction: column;
   align-items: center;
+}
+
+legend {
+	text-color: white;
 }
 
 p, span a, h2 {
@@ -76,6 +79,10 @@ h2 {
   justify-content: space-between;
   flex-wrap: wrap;
 
+}
+
+nav span {
+  height: 36px;
 }
 
 span a {
@@ -107,22 +114,6 @@ nav, footer, .images > div{
   font-size: 500%;
 }
 
-#main-text {
-  font-size: 120%;
-  margin: 4% auto;
-  padding: 4% 2%;
-  border-style: double;
-  border-width: 5px;
-}
-
-#main-text .image-person {
-  border-color: black;
-}
-
-#main-text img {
-  margin-top: 8%;
-}
-
 #singlemember {
   width: auto;
   height: 500%;
@@ -138,9 +129,48 @@ nav, footer, .images > div{
   margin-bottom: 5%;
 }
 
-#test {
+#rush-text {
+  width: 50%;
+}
+
+#rush-chair {
+  text-align: left;
+  margin-right: auto;
+  width: 20%;
+  font-size: 80%
+}
+
+#rush-chair > img {
+  width: 100%;
+  height: auto;
+}
+
+#fb-page div {
+  background-color: white;
+}
+
+.main-text {
+  font-size: 120%;
+  margin: 4% auto;
+  padding: 4% 2%;
+  border-style: double;
+  border-width: 5px;
+}
+
+.main-text .image-person {
+  border-color: black;
+}
+
+.main-text img {
+  margin-top: 8%;
+}
+
+.inner-dropdown > span {
   position: relative;
-  background-color: green;
+}
+
+.ZetaBT {
+  font-weight: bold;
 }
 
 .div-person {
@@ -174,5 +204,4 @@ a:hover {
 
 .hidden {
   display: none;
-  visibility: none;
 }
