@@ -69,7 +69,7 @@
       imageBlock.appendChild(image);
       imageBlock.appendChild(name);
       imageBlock.classList.add("div-person");
-      imageBlock.addEventListener("click", singleMemberHandler);
+      //imageBlock.addEventListener("click", singleMemberHandler);
       $(`images-${affiliation}`).appendChild(imageBlock);
     }
   }

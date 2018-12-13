@@ -17,6 +17,7 @@ It also has a footer noting that the website is copyrighted.
     <link href="index.css" rel="stylesheet" />
     <link rel="icon" type="image/ico" href="./Images/zbt_icon.jpg" />
     <script src="brothers.js"></script>
+    <script src="index.js"></script>
     <title>ZBT - Alpha Mu</title>
   </head>
 
@@ -35,7 +36,12 @@ It also has a footer noting that the website is copyrighted.
       <nav>
         <span><a href="index.html">Home</a></span>
         <span class="active"><a href="Brothers.html">Brothers</a></span>
-        <span><a href="rush-form.html">Rush</a></span>
+        <div class="dropdown">
+          <span><a href="rush.html">Rush</a></span>
+          <div class="inner-dropdown hidden">
+            <span><a href="rush-form.html">Tour Now!</a><span>
+          </div>
+        </div>
         <span><a href="Social.html">Social</a></span>
       </nav>
       <h1 class="side-page">Our House</h1>

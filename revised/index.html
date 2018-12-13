@@ -15,15 +15,21 @@ statement. It also has a footer noting that the website is copyrighted.
     <meta charset = "utf-8">
     <link href="Index.css" rel="stylesheet" />
     <link rel="icon" type="image/ico" href="Images/zbt_icon.jpg" />
+    <script src="index.js"></script>
     <title>ZBT - Alpha Mu</title>
   </head>
   <body>
     <header>
       <nav>
-        <span class="active"><a href="index.html">Home</a></span>
-        <span><a href="Brothers.html">Brothers</a></span>
-        <span><a href="rush-form.html">Rush</a></span>
-        <span><a href="Social.html">Social</a></span>
+      <a href="index.html" class="active">Home</a>
+        <a href="Brothers.html">Brothers</a>
+        <div class="dropdown">
+          <a href="rush.html">Rush</a>
+          <div class="dropdown-content hidden">
+            <a href="rush-form.html">Tour Now!</a>
+          </div>
+        </div>
+      <a href="Social.html">Social</a>
       </nav>
 
       <h1 id="ZBT">Zeta Beta Tau</h1>
@@ -33,28 +39,27 @@ statement. It also has a footer noting that the website is copyrighted.
     <main>
       <!-- Copied from the ZBT Alpha Mu at University of Washington
       Facebook Page: https://www.facebook.com/pg/uwzbt/ -->
-      <div id="main-text">
+      <div class="main-text">
         <p>
-          <span>The mission of <em id="ZetaBT">Zeta Beta Tau</em> Fraternity
-            (ZBT)
-           is to foster and</span>
+          <span>The mission of <em class="ZetaBT">Zeta Beta Tau</em> Fraternity
+            (ZBT) is to foster and</span>
           <span>develop in its membership the tenets of its Credo:
-                  Intellectual</span>
+            Intellectual</span>
           <span>Awareness, Social Responsibility, Integrity and Brotherly</span>
           <span>Love, in order to prepare its members for positions of</span>
           <span>leadership and service within their communities.</span>
         </p>
         <p>
           <span>Mindful of its founding in 1898 as the Nation's first Jewish
-              </span>
+            </span>
           <span>Fraternity, ZBT will preserve and cultivate its
-              relationships</span>
+            relationships</span>
           <span>within the Jewish community. Since 1954, ZBT has been</span>
           <span>committed to its policy of non-sectarian Brotherhood, and</span>
           <span>values the diversity of its membership. ZBT will recruit
-              and</span>
+            and</span>
           <span>initiate men of good character, regardless of
-              religion, race or</span>
+            religion, race or</span>
           <span>creed who are accepting of these principles.</span>
         </p>
           <!--Taken from https://zbt.org-->

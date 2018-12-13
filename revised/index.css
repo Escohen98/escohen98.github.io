@@ -33,15 +33,13 @@ main, #singlemember, #singlemember > div {
 
 nav {
   justify-content: center;
-  border-right-style: solid;
-  border-right-color: #555;
   font-size: 210%;
   position: fixed;
   overflow: hidden;
   top: 0px;
 }
 
-nav span, #singlemember {
+nav a, #singlemember {
   background-color: black;
 }
 
@@ -59,7 +57,7 @@ legend {
 	text-color: white;
 }
 
-p, span a, h2 {
+p, nav a, h2 {
   color: white;
 }
 
@@ -81,14 +79,23 @@ h2 {
 
 }
 
-nav span {
+nav a {
   height: 36px;
-}
-
-span a {
   text-decoration: none;
   padding-left: 80px;
   padding-right: 80px;
+  border-style: solid;
+  border-color: #000;
+  border-width: 1px;
+}
+
+.dropdown-content {
+  background-color: black;
+  width: 220px;
+}
+
+.dropdown-content > a {
+  padding: 0px;
 }
 
 p span {
@@ -165,7 +172,7 @@ nav, footer, .images > div{
   margin-top: 8%;
 }
 
-.inner-dropdown > span {
+.dropdown-content > a {
   position: relative;
 }
 
