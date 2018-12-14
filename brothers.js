@@ -13,7 +13,7 @@
   "use strict";
 
   window.addEventListener("load", initialize);
-  const URL = "https://afternoon-citadel-95316.herokuapp.com?";
+  const URL = "https://afternoon-citadel-95316.herokuapp.com/?";
 
   //Begins proccess to acquire image data.
   //Adds click event listener to #singlemember.
