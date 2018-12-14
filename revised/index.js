@@ -42,7 +42,7 @@ as well as the donate button on the front page.
 
   //Redirects page to rush-form.html.
   function rushForm() {
-    window.location.href = "rush-form.html";
+    window.location.href = "https://goo.gl/forms/KxOZ2ltyYQwcao2K3";
   }
 
   //toggles hidden class from inner-dropdown.
