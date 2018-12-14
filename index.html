@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <!--
 Eric Cohen
-Date: October 17, 2018
+Date: November 15, 2018
 Section: CSE 154 AI
 
 This is the index.html page for my portfolio of web development work.
@@ -14,75 +14,61 @@ statement. It also has a footer noting that the website is copyrighted.
   <head>
     <meta charset = "utf-8">
     <link href="Index.css" rel="stylesheet" />
-    <link rel="icon" type="image/ico" href="./Images/zbt_icon.jpg" />
-    <title>ZBT - Alpha Mu</title>
-    <script>
-        window.addEventListener("load", initialize);
-        function initialize() {
-          alert("This website is still under construction. Please visit https://www.facebook.com/uwzbt/ to get in contact with our house. Thank you!");
-        }
-    </script>
+    <link rel="icon" type="image/ico" href="Images/zbt_icon.jpg" />
     <script src="index.js"></script>
+    <title>ZBT - Alpha Mu</title>
   </head>
-  <body class="body-main">
-    <header class="home center-text">
+  <body>
+    <header>
       <nav>
-          <div class="active"><a href="index.html">Home</a></div>
-          <!-- Dropdown button implemented from
-          https://www.w3schools.com/howto/howto_css_dropdown.asp -->
-          <div class="dropdown">
-            <!--<button class="dropbtn">-->
-              <div><a href="Brothers.html">Brothers</a></div><!--</button>-->
-              <!--Implementation coming soon -->
-            <div class="dropdown-content hidden">
-              <a href="Eboard.html">Eboard</a>
-              <a href="Brothers.html">Members</a>
-              <a href="Sweethearts.html">Sweethearts</a>
-            </div>
+      <a href="index.html" class="active">Home</a>
+        <a href="Brothers.html">Brothers</a>
+        <div class="dropdown">
+          <a href="rush.html">Rush</a>
+          <div class="dropdown-content hidden">
+            <a href="https://goo.gl/forms/KxOZ2ltyYQwcao2K3">Tour Now!</a>
           </div>
-          <div><a href="rush-form.html">Rush</a></div>
-          <div><a href="Social.html">Social</a></div>
+        </div>
+      <a href="Social.html">Social</a>
       </nav>
-      <h1 class="title"><span id="ZBT">Zeta Beta Tau</span></h1>
+      <h1 id="ZBT">Zeta Beta Tau</h1>
       <!--ZBT Motto-->
       <h2 id="motto"> "A Powerhouse of Excellence"</h2>
     </header>
     <main>
       <!-- Copied from the ZBT Alpha Mu at University of Washington
       Facebook Page: https://www.facebook.com/pg/uwzbt/ -->
-      <div id="main-text" class="center-text">
+      <div class="main-text">
         <p>
-          The mission of <em id="ZetaBT">Zeta Beta Tau</em> Fraternity (ZBT)
-           is to foster and
-          <br><br>develop in its membership the tenets of its Credo:
-                  Intellectual
-          <br><br>Awareness, Social Responsibility, Integrity and Brotherly
-          <br><br>Love, in order to prepare its members for positions of
-          <br><br>leadership and service within their communities.
-          <br><br>
-          <br><br>Mindful of its founding in 1898 as the Nation's first Jewish
-          <br><br>Fraternity, ZBT will preserve and cultivate its relationships
-          <br><br>within the Jewish community. Since 1954, ZBT has been
-          <br><br>committed to its policy of non-sectarian Brotherhood, and
-          <br><br>values the diversity of its membership. ZBT will recruit and
-          <br><br>initiate men of good character, regardless of
-                  religion, race or
-          <br><br>creed who are accepting of these principles.
+          <span>The mission of <em class="ZetaBT">Zeta Beta Tau</em> Fraternity
+            (ZBT) is to foster and</span>
+          <span>develop in its membership the tenets of its Credo:
+            Intellectual</span>
+          <span>Awareness, Social Responsibility, Integrity and Brotherly</span>
+          <span>Love, in order to prepare its members for positions of</span>
+          <span>leadership and service within their communities.</span>
         </p>
-        <!--Taken from https://zbt.org-->
-        <span id="crest"><img src="Images/zbt_crest.png" alt="ZBT Logo"/></span>
-        <!-- Taken from https://www.takethis.org/paypal-donate-button/ -->
-        <div id="donate-button">
-          <img src="./Images/paypal-donate-button.png" alt="Donate Button"/>
-        </div>
+        <p>
+          <span>Mindful of its founding in 1898 as the Nation's first Jewish
+            </span>
+          <span>Fraternity, ZBT will preserve and cultivate its
+            relationships</span>
+          <span>within the Jewish community. Since 1954, ZBT has been</span>
+          <span>committed to its policy of non-sectarian Brotherhood, and</span>
+          <span>values the diversity of its membership. ZBT will recruit
+            and</span>
+          <span>initiate men of good character, regardless of
+            religion, race or</span>
+          <span>creed who are accepting of these principles.</span>
+        </p>
+          <!--Taken from https://zbt.org-->
+        <img src="Images/zbt_crest.png" alt="ZBT Logo"/>
       </div>
     </main>
-
     <footer>
       <!--Paraphrased from https://zbttexas.com/-->
-      <p> &copy; 2018 by Washington Alpha Mu. Site Managed by ZBT Washington
-          Internet Chair.</p>
+        <p> &copy; 2018 by Washington Alpha Mu. Site Managed by ZBT Washington
+            Internet Chair.</p>
     </footer>
   </body>
-
 </html>

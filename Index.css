@@ -1,6 +1,6 @@
 /*
 Eric Cohen
-Date: October, 3, 2018
+Date: November 16, 2018
 Section: CSE 154 AI
 
 This is the index.css page for my web development portfolio and my Fraternity's
@@ -9,32 +9,13 @@ keep the overall design consistency. The file looks distored because the univers
 operator has been removed.
 */
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
+/*Image taken from https://goo.gl/2ZkWQm*/
 body {
-  margin: 0;
-}
-
-div a {
-  text-decoration: none;
-  padding-left: 80px;
-  padding-right: 80px;
-}
-
-div {
-  display: inline-block;
-  overflow: hidden;
-}
-
-div.active {
-  background-color: #25185d;
-}
-
-a:hover {
-  color: #999900;
+  background-image: url("Images/UW_background.jpg");
+  background-size: 100% auto;
+  background-attachment: fixed;
+  margin: 0px;
+  text-align: center;
 }
 
 /*Image taken from
@@ -42,159 +23,192 @@ https://wallpapercave.com/cool-plain-backgrounds
 */
 main {
   background-image: url("Images/background_body.jpg");
+  width: 95%;
+  height: 100%;
 }
 
-main p {
-  padding: 2px;
+main, #singlemember, #singlemember > div {
+  margin: auto;
+}
+
+nav {
+  justify-content: center;
+  font-size: 210%;
+  position: fixed;
+  overflow: hidden;
+  top: 0px;
+}
+
+nav a, #singlemember {
+  background-color: black;
+}
+
+main, nav, .main-text p, .images > div, #singlemember, #singlemember > div,
+  .dropdown {
+  display: flex;
+}
+
+main, .main-text p, #singlemember > div, .dropdown {
+  flex-direction: column;
+  align-items: center;
+}
+
+legend {
+	text-color: white;
+}
+
+p, nav a, h2 {
+  color: white;
+}
+
+h1 {
+  text-shadow: 10px 10px 54px #ffd200, -10px -10px 54px #ffd200,
+               -10px 10px 54px #ffd200, 10px -10px 54px #ffd200;
+  color: #003366;
+}
+
+h2 {
+  font-size: 250%;
+  text-shadow: 1px 1px 0 #000000, -1px -1px 0 #000000,
+             -1px 1px 0 #000000, 1px -1px 0 #000000;
+}
+
+.images > div, #singlemember {
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+nav a {
+  height: 36px;
+  text-decoration: none;
+  padding-left: 80px;
+  padding-right: 80px;
+  border-style: solid;
+  border-color: #000;
+  border-width: 1px;
+}
+
+.dropdown-content {
+  background-color: black;
+  width: 220px;
+}
+
+.dropdown-content > a {
+  padding: 0px;
+}
+
+p span {
+  padding-top: 20px;
 }
 
 footer {
   background-color: gray;
-  bottom: fixed;
+  color: black;
+  margin: 0px;
+  bottom: 0px;
 }
 
-iframe {
-  border: none;
-  overflow: hidden;
-  background-color: white;
-  margin-top: 2vh;
+footer p {
+  margin: 0;
 }
 
-h1 a {
-  text-decoration: none;
-  color: #003366;
-}
-
-nav {
-  background-color: black;
-  border-right-style: solid;
-  border-right-color: #555;
-  font-size: 210%;
-  position: fixed;
-}
-
-fieldset, form button {
-  margin-top: 1vh;
-  margin-bottom: 1vh;
-}
-
-form {
-  padding-left: .2vh;
-}
-
-fieldset {
-  font-size: 30px;
-  padding-left: 1vh;
-}
-
-nav, #fb-page {
-  align-items: center;
-}
-nav, #main-text, #fb-page {
-  display: flex;
-}
-
-nav, #main-text {
-  justify-content: center;
-}
-
-.home, div a, main {
-  color: white;
-}
-
-.title {
-  text-shadow: 10px 10px 54px #ffd200, -10px -10px 54px #ffd200,
-               -10px 10px 54px #ffd200, 10px -10px 54px #ffd200;
-  color: #003366;
-  line-height: 2.104;
-}
-
-.page-title {
-  font-size: 100px;
-}
-
-/*Image taken from https://goo.gl/2ZkWQm*/
-.body-main {
-  background-image: url("Images/UW_background.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-attachment: fixed;
-}
-
-.existing {
-  min-height: 100vh;
-}
-
-.center-text {
-  text-align: center;
-}
-
-.hidden {
-  display: none;
-}
-
-#submit-response-size {
-  font-size: 25px;
+nav, footer, .images > div{
+  width: 100%;
 }
 
 #ZBT {
   font-size: 500%;
 }
 
-#ZetaBT {
-  font-weight: bold;
+#singlemember {
+  width: auto;
+  height: 500%;
 }
 
-#motto {
-  font-size: 200%;
-  text-shadow: 1px 1px 0 #000000, -1px -1px 0 #000000,
-               -1px 1px 0 #000000, 1px -1px 0 #000000;
-  margin-bottom: 1%
+#singlemember > div {
+  height: 200%;
+  width: auto; /*Duplicate property*/
 }
 
-/*Image taken from
-https://nypost.com/2018/08/05/party-boat-fight-leads-to-stabbing-cops/ */
-#body-404 {
-  background-image: url("Images/cop_light.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
+#rush-submit {
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
-#body-404, .body-main, navbar {
-  background-color: black;
+#rush-text {
+  width: 50%;
 }
 
-#main-text {
-  font-size: 120%;
-  padding-top: 8%;
-  flex-flow: column;
-
+#rush-chair {
+  text-align: left;
+  margin-right: auto;
+  width: 20%;
+  font-size: 80%
 }
 
-#main-image, #main-text, nav, #fb-page {
+#rush-chair > img {
   width: 100%;
   height: auto;
 }
 
-#text-404 {
-  font-size: 250%;
-  padding: 2%;
-  margin: 9%;
+#fb-page div {
+  background-color: white;
 }
 
-#main-img {
-  margin-left: auto;
-  margin-right: auto;
+.main-text {
+  font-size: 120%;
+  margin: 4% auto;
+  padding: 4% 2%;
+  border-style: double;
+  border-width: 5px;
 }
 
-#crest {
-  margin-top: 8vh;
+.main-text .image-person {
+  border-color: black;
 }
 
-#fb-page {
-  flex-direction: column;
+.main-text img {
+  margin-top: 8%;
 }
 
-#fb-page > div:nth-child(5) {
-  margin-bottom: 2vh;
+.dropdown-content > a {
+  position: relative;
+}
+
+.ZetaBT {
+  font-weight: bold;
+}
+
+.div-person {
+  margin: 2%;
+}
+
+.div-person p {
+  font-size: 20px;
+}
+
+.div-person:hover {
+  border-color: white;
+}
+
+.div-person:hover, .image-person {
+  border-style: solid;
+}
+
+.side-page {
+  font-size: 60px;
+  margin-top: 4%;
+}
+
+a:hover {
+  color: #999900;
+}
+
+.active {
+  background-color: #25185d;
+}
+
+.hidden {
+  display: none;
 }
