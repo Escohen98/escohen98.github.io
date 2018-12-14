@@ -26,7 +26,7 @@
   //checks the status and if sucessful parses the response and sends to another
   //function, otherwise sends error code to be displayed on page.
   function fetchData() {
-    fetch(URL + "name=all", {mode : "cors"})
+    fetch(URL + "name=all", {mode : "no-cors"})
       .then(checkStatus)
       .then(JSON.parse)
       .then(processImages)
