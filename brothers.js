@@ -26,8 +26,7 @@
   //checks the status and if sucessful parses the response and sends to another
   //function, otherwise sends error code to be displayed on page.
   function fetchData() {
-    console.log(URL);
-    fetch("https://cors-anywhere.herokuapp.com/" + URL + "name=all", {mode: "cors"})
+    fetch(URL + "name=all", {mode: "cors"})
       .then(checkStatus)
       .then(JSON.parse)
       .then(processImages)

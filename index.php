@@ -40,6 +40,7 @@
 *   - name={brothername}
 *     | Not yet implemented.
 */
+header("Access-Control-Allow-Origin: https://zbtuw.org/*");
   if(!isset($_GET["type"]) || strtolower($_GET["type"]) == "json") {
     if (isset($_GET["name"])) {
       $members;
