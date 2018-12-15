@@ -27,7 +27,7 @@
   //function, otherwise sends error code to be displayed on page.
   function fetchData() {
     console.log(URL);
-    fetch(URL + "name=all", {mode: "cors", header: "Content-type: application/json"})
+    fetch("https://cors-anywhere.herokuapp.com/" + URL + "name=all", {mode: "cors"})
       .then(checkStatus)
       .then(JSON.parse)
       .then(processImages)
