@@ -26,6 +26,7 @@
   //checks the status and if sucessful parses the response and sends to another
   //function, otherwise sends error code to be displayed on page.
   function fetchData() {
+    console.log("Access: Open.");
     fetch(URL + "name=all", {mode: "cors"})
       .then(checkStatus)
       .then(JSON.parse)
