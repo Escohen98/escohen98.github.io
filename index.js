@@ -47,7 +47,7 @@ as well as the donate button on the front page.
 
   //toggles hidden class from inner-dropdown.
   function dropdownMenu() {
-    console.log(this.childNodes[2].nextSibling);
+    //console.log(this.childNodes[2].nextSibling);
     this.childNodes[3].classList.toggle("hidden");
   }
 
