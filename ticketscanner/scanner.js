@@ -3,6 +3,7 @@
 
   window.addEventListener("load", initialize);
   const CODE_LENGTH = 4;
+  let codes = []; //An array containing codes already used. Only for testing purposes.
 
   //Adds event listeners to specified buttons.
   function initialize() {
@@ -18,12 +19,15 @@
     $("enter").addEventListener("click", fetchData);
   }
 
+  //Checks if code already exists in codes. If false, displays success
+  //otherwise displays error.
   function fetchData() {
     updateBtnColor();
     let code = $("code").innerText;
-    let test = Math.round(Math.random());
+    //let test = Math.round(Math.random());
     if(code.length == 4) {
-      if(test==0) {
+      console.log(codes.includes(code));
+      if(/*test==0 &&*/ !codes.includes(code) /*Testing Frontend only*/) {
         displayResult(true);
       } else {
         displayResult(false);
@@ -43,6 +47,7 @@
         element = "success";
         file = "success.wav";
         document.body.style.backgroundColor = "green";
+        codes.push($("code").innerText); //For testing frontend only.
       }
       let timer = null;
       timer = setTimeout(function() {
