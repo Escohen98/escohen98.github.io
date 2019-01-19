@@ -2,27 +2,27 @@
   "use strict";
 
   window.addEventListener("load", initialize);
-  const CODE_LENGTH = 4;
+  const CODE_LENGTH = 4; //max code length.
   let codes = []; //An array containing codes already used. Only for testing purposes.
 
   //Adds event listeners to specified buttons.
   function initialize() {
     let nums = qsa(".num");
     for (let i = 0; i<nums.length; i++) {
-      addColorChange(nums[i]);
+      //addColorChange(nums[i]);
       nums[i].addEventListener("click", addChar);
     }
-    addColorChange($("x"));
+    //addColorChange($("x"));
     $("x").addEventListener("click", delChar);
 
-    addColorChange($("enter"));
+  //  addColorChange($("enter"));
     $("enter").addEventListener("click", fetchData);
   }
 
   //Checks if code already exists in codes. If false, displays success
   //otherwise displays error.
   function fetchData() {
-    updateBtnColor();
+    //updateBtnColor();
     let code = $("code").innerText;
     //let test = Math.round(Math.random());
     if(code.length == 4) {
@@ -62,7 +62,7 @@
 
     //Adds given number (0-9) to the code string while the length <= CODE_LENGTH
     function addChar() {
-      updateBtnColor();
+      //updateBtnColor();
       $("success").classList.add("hidden");
       $("error").classList.add("hidden");
       document.body.style.backgroundColor = "white";
@@ -85,14 +85,14 @@
 
   //Adds mousedown and mouseup events to given button to change the color
   //when pressed.
-  function addColorChange(btn) {
+/*  function addColorChange(btn) {
     btn.addEventListener("mousedown", function() {this.style.backgroundColor =
                                                   "blue";});
     btn.addEventListener("mouseup", function() {this.style.backgroundColor =
                                                 "#DBDBDB";});
-  }
+  }*/
 
-  //Changes the color of the element that called on the function to
+/*  //Changes the color of the element that called on the function to
   //gray if it's blue, otherwise turns it gray.
   function changeColor() {
     if(this.style.backgroundColor == "blue" ) {
@@ -101,9 +101,9 @@
       this.style.backgroundColor = "blue";
     }
 
-  }
+  }*/
 
-  //Makes sure all buttons are set to default.
+  /*//Makes sure all buttons are set to default.
   //Redundant but necessary.
   function updateBtnColor() {
     let btns = qsa("button");
@@ -112,7 +112,7 @@
         btns[i].style.backgroundColor = "#DBDBDB";
       }
     }
-  }
+  }*/
 
   //Retrieved functions from CSE 154 Template
   //Simplifies importing elements
