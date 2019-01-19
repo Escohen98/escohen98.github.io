@@ -1,0 +1,43 @@
+body, #code-validator, #code {
+  display: flex;
+  justify-content: center;
+}
+
+body, #code {
+  align-items: center;
+}
+
+button {
+  width: 100px;
+  height: 100px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  font-size: 30px;
+}
+
+#code-validator {
+  align-self: center;
+  flex-wrap: wrap;
+  width: 300px;
+}
+
+#code {
+  width: 300px;
+  height: 40px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  font-size: 20px;
+  background-color: white;
+}
+
+#reply > img {
+  margin-top: 25px;
+  width: 150px;
+  height: 150px;
+}
+
+.hidden {
+  display: none;
+}
