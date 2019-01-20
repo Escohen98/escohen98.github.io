@@ -27,7 +27,7 @@
     let code = $("code").innerText;
     let params = new FormData();
     params.append("code", code);
-    fetch(URL+"/backend/scanner.php", {method: "POST", body: params})
+    fetch(URL+"/backend/scanner.php", {method: "POST", mode: "cors", body: params})
       .then(checkStatus)
       .then(JSON.parse)
       .then(displayResult)
