@@ -4,7 +4,6 @@
   window.addEventListener("load", initialize);
     const URL = "https://afternoon-citadel-95316.herokuapp.com/";
   const CODE_LENGTH = 4; //max code length.
-  //let codes = []; //An array containing codes already used. Only for testing purposes.
 
   //Adds event listeners to specified buttons.
   function initialize() {
@@ -27,21 +26,11 @@
     let code = $("code").innerText;
     let params = new FormData();
     params.append("code", code);
-
+    fetch(URL+"/backend/scanner.php", {method: "POST", mode: "cors", body: params})
       .then(checkStatus)
       .then(JSON.parse)
       .then(displayResult)
       .catch(console.log);
-      /*
-    //let test = Math.round(Math.random());
-    if(code.length == 4) {
-      console.log(codes.includes(code));
-      if(/*test==0 && !codes.includes(code) /*Testing Frontend only) {
-        displayResult(true);
-      } else {
-        displayResult(false);
-      }
-    }*/
   }
 
     // Displays success image for 1/2 a second and plays a success sound
@@ -89,37 +78,6 @@
         code = $("code").innerText;
       }
     }
-
-  //Adds mousedown and mouseup events to given button to change the color
-  //when pressed.
-/*  function addColorChange(btn) {
-    btn.addEventListener("mousedown", function() {this.style.backgroundColor =
-                                                  "blue";});
-    btn.addEventListener("mouseup", function() {this.style.backgroundColor =
-                                                "#DBDBDB";});
-  }*/
-
-/*  //Changes the color of the element that called on the function to
-  //gray if it's blue, otherwise turns it gray.
-  function changeColor() {
-    if(this.style.backgroundColor == "blue" ) {
-      this.style.backgroundColor = "#DBDBDB";
-    } else {
-      this.style.backgroundColor = "blue";
-    }
-
-  }*/
-
-  /*//Makes sure all buttons are set to default.
-  //Redundant but necessary.
-  function updateBtnColor() {
-    let btns = qsa("button");
-    for(let i = 0; i<btns.lenght; i++) {
-      if(btns[i].style.backgroundColor == "blue" ) {
-        btns[i].style.backgroundColor = "#DBDBDB";
-      }
-    }
-  }*/
 
   /*
   * Taken from bestreads assignment

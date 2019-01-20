@@ -17,7 +17,7 @@
     $("x").addEventListener("click", delChar);
 
   //  addColorChange($("enter"));
-    //$("enter1").addEventListener("click", fetchData);
+    $("enter1").addEventListener("click", fetchData);
   }
 
   //Pulls count ammount of codes from database and sets them to active.
@@ -27,7 +27,7 @@
     console.log(count);
     let params = new FormData();
     params.append("pull", count);
-
+    fetch(URL+"/backend/scanner.php", {method: "POST", mode: "cors", body: params})
     .then(checkStatus)
     .then(JSON.parse)
     .then(displayResult)
