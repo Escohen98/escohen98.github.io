@@ -17,7 +17,7 @@
     $("x").addEventListener("click", delChar);
 
   //  addColorChange($("enter"));
-    $("enter1").addEventListener("click", fetchData);
+    //$("enter1").addEventListener("click", fetchData);
   }
 
   //Pulls count ammount of codes from database and sets them to active.
