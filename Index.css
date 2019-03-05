@@ -230,9 +230,13 @@ nav, footer, .images > div{
   border-style: solid;
 }
 
-.div-event, .div-event > img {
+.div-event, .image-person {
   width: 20em;
   height: auto;
+}
+
+.rotate {
+  image-orientation: 90;
 }
 
 .side-page {
