@@ -3,7 +3,7 @@
 * Date: November 11, 2018
 * Section: CSE 154 AI
 *
-* This is the index.js page for my portfoloi of web development work. It
+* This is the brothers.js page for my portfoloi of web development work. It
 * used to fetch from my Image API and retriev information in-order to display
 * the images of the brothers and sweethearts of my fraternity on Brothers.html.
 * it is also used to display a string of file names at the bototm of the page
