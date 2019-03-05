@@ -129,8 +129,6 @@ nav, footer, .images > div{
 #singlemember {
   width: auto;
   height: 500%;
-  margin-top: 20%;
-  margin-bottom: 20%;
   flex-direction: column;
 }
 
@@ -141,6 +139,11 @@ nav, footer, .images > div{
 #singlemember > div {
   height: 200%;
   width: auto; /*Duplicate property*/
+}
+
+#singlemember, #single {
+  margin-top: 20%;
+  margin-bottom: 20%;
 }
 
 #single-img {
