@@ -19,7 +19,7 @@
   //Adds click event listener to #singlemember.
   function initialize() {
     fetchData();
-    //$("singlemember").addEventListener("click", toggleViews);
+    $("singlemember").addEventListener("click", toggleViews);
   }
 
   //Fetches from Image API (That's what I am naming it), with parameter name=all
@@ -70,7 +70,7 @@
       imageBlock.appendChild(image);
       imageBlock.appendChild(name);
       imageBlock.classList.add("div-person");
-      //imageBlock.addEventListener("click", singleMemberHandler);
+      imageBlock.addEventListener("click", singleMemberHandler);
       $(`images-${affiliation}`).appendChild(imageBlock);
     }
   }
@@ -95,7 +95,7 @@
   function toggleViews() {
     $("allmembers").classList.toggle("hidden");
     $("singlemember").classList.toggle("hidden");
-    $("member-portrait").classList.toggle("hidden");
+    //$("member-portrait").classList.toggle("hidden");
     document.querySelector("h1").classList.toggle("hidden");
   }
 

@@ -7,6 +7,7 @@
   //Begins proccess to acquire image data.
   //Adds click event listener to #singlemember.
   function initialize() {
+    $("single").addEventListener("click", toggleViews);
     fetchData();
     //$("singlemember").addEventListener("click", toggleViews);
   }
@@ -45,7 +46,7 @@
   //Adds div to #images-brother or #images-sweethearts.
   function imageHandler(response) {
     for (let year=0; year<response.length; year++) {
-      let title = document.createElement("h2")
+      let title = document.createElement("h2");
       let pics = response[year];
       title.innerText = pics[0];
       let yearBlock = document.createElement("div");
@@ -62,6 +63,7 @@
         imageBlock.appendChild(image);
         imageBlock.classList.add("div-person");
         imageBlock.classList.add("div-event");
+        imageBlock.addEventListener("click", singleMemberHandler);
         //imageBlock.addEventListener("click", singleMemberHandler);
 
         yearBlock.appendChild(imageBlock);
@@ -71,10 +73,11 @@
     }
   }
 
-  /*function singleMemberHandler() {
-    $("member-portrait").src = this.firstChild.src;
+  function singleMemberHandler() {
+    $("single-img").src = this.firstChild.src;
+    $("single-img").alt = this.firstChild.alt;
     toggleViews();
-  }*/
+  }
 /*
   //Sets the inner text of #file-names to response.
   function printText(response) {
@@ -88,10 +91,9 @@
 
   //Toggles hidden class for #allmembers and #singlemember.
   function toggleViews() {
-    $("allmembers").classList.toggle("hidden");
-    $("singlemember").classList.toggle("hidden");
-    $("member-portrait").classList.toggle("hidden");
-    document.querySelector("h1").classList.toggle("hidden");
+    $("images").classList.toggle("hidden");
+    $("single").classList.toggle("hidden");
+    //document.querySelector("h1").classList.toggle("hidden");
   }
 
   //Helper function returns response if successful or a rejection promise if

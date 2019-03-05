@@ -27,7 +27,7 @@ main {
   height: 100%;
 }
 
-main, #singlemember, #singlemember > div {
+main {
   margin: auto;
 }
 
@@ -39,7 +39,7 @@ nav {
   top: 0px;
 }
 
-nav a, #singlemember {
+nav a {
   background-color: black;
 }
 
@@ -129,11 +129,23 @@ nav, footer, .images > div{
 #singlemember {
   width: auto;
   height: 500%;
+  margin-top: 20%;
+  margin-bottom: 20%;
+  flex-direction: column;
+}
+
+#singlemember > p {
+  font-size: 40px;
 }
 
 #singlemember > div {
   height: 200%;
   width: auto; /*Duplicate property*/
+}
+
+#single-img {
+  width: 50%;
+  height: auto;
 }
 
 #rush-submit {
@@ -173,6 +185,11 @@ nav, footer, .images > div{
   background-color: white;
 }
 
+#member-portrait {
+  width: 20em;
+  height: 100%;
+}
+
 .main-text {
   font-size: 120%;
   margin: 4% auto;
@@ -209,7 +226,7 @@ nav, footer, .images > div{
   border-color: white;
 }
 
-.div-person:hover, .image-person {
+.image-person {
   border-style: solid;
 }
 
