@@ -146,6 +146,14 @@ nav, footer, .images > div{
   margin-bottom: 20%;
 }
 
+#sb /*Temp for Soulja Boi*/ {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  /*position: absolute;
+  top: 50%;
+  left: 21%;*/
+}
+
 #single-img {
   width: 50%;
   height: auto;
