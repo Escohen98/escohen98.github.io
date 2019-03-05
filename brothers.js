@@ -56,7 +56,7 @@
   //Adds div to #images-brother or #images-sweethearts.
   function imageHandler(response, affiliation) {
     let list = response[affiliation];
-    for (let i=0; i<list.length; i++) {
+    for (let i=1; i<list.length; i++) {
       let imageBlock = document.createElement("div");
       let image = document.createElement("img");
       let name = document.createElement("p");
