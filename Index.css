@@ -217,6 +217,10 @@ nav, footer, .images > div{
   margin-top: 8%;
 }
 
+#one {
+  margin-top: 4%;
+}
+
 .dropdown-content > a {
   position: relative;
 }
