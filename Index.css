@@ -230,7 +230,12 @@ nav, footer, .images > div{
   border-style: solid;
 }
 
-.div-event, .image-person {
+#allmembers .image-person {
+  width: 15em;
+  height: auto;
+}
+
+.div-event, .div-event > .image-person {
   width: 20em;
   height: auto;
 }
