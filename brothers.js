@@ -95,7 +95,8 @@
   function toggleViews() {
     $("allmembers").classList.toggle("hidden");
     $("singlemember").classList.toggle("hidden");
-    //$("member-portrait").classList.toggle("hidden");
+    $("member-portrait").classList.toggle("hidden");
+    $("brother-name").classList.toggle("hidden");
     document.querySelector("h1").classList.toggle("hidden");
   }
 
