@@ -235,8 +235,8 @@ nav, footer, .images > div{
   height: auto;
 }
 
-.rotate {
-  image-orientation: 90;
+img {
+  image-orientation: from-image;
 }
 
 .side-page {

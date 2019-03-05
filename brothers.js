@@ -65,7 +65,6 @@
       image.src = (person.path + person.file);
       image.alt = person.file;
       image.classList.add("image-person");
-      image.classList.add("rotate");
       name.innerText = `${person.first_name} ${person.last_name}`;
 
       imageBlock.appendChild(image);
