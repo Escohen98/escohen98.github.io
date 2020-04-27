@@ -126,6 +126,10 @@ nav, footer, .images > div{
   font-size: 500%;
 }
 
+#to-white {
+  color: white;
+}
+
 #singlemember {
   width: auto;
   height: 500%;
@@ -182,6 +186,14 @@ nav, footer, .images > div{
 
 #rush-btn:hover {
   color: #ffd200;
+}
+
+#plat-text {
+  color: white;
+}
+
+#plat-pic {
+  width: 20%;
 }
 
 #fb-page div {
